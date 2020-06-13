@@ -45,7 +45,7 @@
                   <li class="nav-item mx-2 active"><a href="index.php" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
                   <li class="nav-item mx-2 active"><a href="About.php" class="nav-link"><i class="fas fa-th"></i> About Us</a></li>
                   <li class="nav-item mx-2 active"><a href="Gallery.php" class="nav-link"><i class="fas fa-galery"></i>Gallery</a></li>
-                  <li class="nav-item mx-2 active"><a href="donation.php" class="nav-link"><i class="fas fa-th"></i> Donate</a></li>
+                  <li class="nav-item mx-2 active"><a href="donation.php" class="nav-link"><i class="fas fa-th"></i>Donate with fun<i class="far fa-smile"></i> </a></li>
                   <?php
                      
                      if (isset($_SESSION['email'])) {
