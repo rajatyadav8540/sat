@@ -14,9 +14,11 @@
   <body>
   <?php include 'header2.php';?> 
   <div style="height:68px;"></div>
-    <div class="">
-        <h1 class="text-center jumbotron">About</h1>
-    </div>
+          <div class="card m-5 shadow-lg">
+            <div class="card-body text-center">
+                <h1>About Us</h1>
+            </div>
+          </div>
     <div class="container" style="background-color:white;box-shadow: 2px 2px 2px green; border-radius: 20px;">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi veniam assumenda voluptate praesentium nam vel, recusandae quae maiores fuga impedit. Quo praesentium voluptate quae possimus mollitia explicabo placeat tenetur exercitationem!</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi veniam assumenda voluptate praesentium nam vel, recusandae quae maiores fuga impedit. Quo praesentium voluptate quae possimus mollitia explicabo placeat tenetur exercitationem!</p>

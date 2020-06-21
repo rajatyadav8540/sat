@@ -20,15 +20,17 @@
     
     ?>
 
-    <div class="container card mt-5">
+    <div class="container-fluid card mt-5">
         <div class="row card-body">
         <?php
         while($member=mysqli_fetch_array($selrunner))
          {
          ?>
-            <div class="col-lg-3 text-center">
-                <img src="<?php echo $member[3] ?>" alt="" class="img-fluid">
+            <div class="col-lg-2 mx-auto card p-0">
+                <img src="<?php echo $member[3] ?>" alt="" class="img-fluid card-img-top">
+                <div class="card-body">
                 <p><?php echo $member[2] ?></p>
+                </div>
             </div>
          <?php } ?>
         </div>

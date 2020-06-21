@@ -1,3 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#preloader{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    background: red url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fgifer.com%2Fen%2F7TwJ&psig=AOvVaw19Yv3-xQWLVt7NK8gjO7gh&ust=1592639484472000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOi47PCyjeoCFQAAAAAdAAAAABAJ);
+    z-index: 9999999;
+}
+
 
 body{
     margin:0px;         
@@ -15,19 +28,17 @@ body{
     width: 100%;
 }
 
-
 #satkarya{
-   
-    font-family: rajfont;
-    font-size: 5vw; 
-    color: white;
-    white-space: nowrap;
-    letter-spacing: .05em;
-    transition:.5s;
-    text-shadow: 5px 5px 5px green,-2px -2px black,2px 2px black; 
-    margin-top: 0px;
-    font-size: 70px;
-}
+                    
+                    font-family: rajfont;
+                    color: white;
+                    white-space: nowrap;
+                    letter-spacing: .05em;
+                    transition:.5s;
+                    text-shadow: 5px 5px 5px green,-2px -2px black,2px 2px black; 
+                    font-size: 90px;
+                  }
+
 #satkarya2{
     font-family: rajfont; 
     color: white;
@@ -35,19 +46,18 @@ body{
     letter-spacing: .05em;
     text-shadow: 5px 5px 5px green,-2px -2px black,2px 2px black;
     transition:.5s;
-    margin-bottom: 0px;
-    font-size: 50px;
+    font-size: 60px;
     
     
 }
 
 #satkarya::first-letter{
     color: red;
-    font-size: 80px;
+    font-size: 100px;
 }
 #satkarya2::first-letter{
     color: red;
-    font-size: 60px;
+    font-size: 70px;
     
     
 }
@@ -60,21 +70,19 @@ body{
      width: 45px;
 }
 #head{
-    height: 105px;
-    min-width: 100%;
-    z-index: 4;
-    transition:.5s;
-    
-    top:0;
-   
+    transition:.5s;  
     
 }  
+#slogo{
+    width:100px;
+}
 #head2{
-    height: 70px;
     min-width: 100%;
-    transition:.5s;
     background-color: rgba(0,0,0,.8);
    text-decoration: none;
+}
+.bg-black{
+    background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.8),transparent);
 }
 
 .headimg{
@@ -137,7 +145,14 @@ body{
     background-color: black;
 }
 
-
+#content{
+    background-image: url(img/hands.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: contain ;
+    background-blend-mode: multiply;
+}
   
 
 #postbox{
@@ -151,6 +166,65 @@ body{
     border-radius: 20px;
    
 }
+
+.mancont{
+    opacity: 0;
+}
+
+.mancont.animated{
+    opacity: 1;
+}
+
+.manimg{
+    opacity: 0;
+}
+
+.manimg.animated{
+    opacity: 1;
+}
+
+
+.utkcont{
+    opacity: 0;
+}
+
+.utkcont.animated{
+    opacity: 1;
+}
+
+.utkimg{
+    opacity: 0;
+}
+
+.utkimg.animated{
+    opacity: 1;
+}
+
+.M1{
+    opacity: 0;
+}
+
+.M1.animated{
+    opacity: 1;
+}
+
+.M2{
+    opacity: 0;
+}
+
+.M2.animated{
+    opacity: 1;
+}
+
+.M3{
+    opacity: 0;
+}
+
+.M3.animated{
+    opacity: 1;
+}
+
+
 
 #p1{
     
@@ -211,3 +285,20 @@ body{
     border-radius: 20px;
    
 }
+
+.C1{
+    display: inline-block;
+     transition-duration: 1s;
+}
+.card-cont{
+    display:none;
+    transition-duration: 1s;
+}
+
+.C1:hover .card-cont{
+    display: block;
+    transition-duration: 1s;
+}
+
+
+

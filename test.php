@@ -11,41 +11,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="dsc.css">  
     <script>
-        window.onscroll=function(){scroll()};
-
-        function scroll(){
-            if(document.body.scrollTop>50||document.documentElement.scrollTop>50)
-            {
-                
-                satkarya=document.getElementById("satkarya");
-                satkarya.classList.add("bg-dark");
-                
-            }
-            else{           
-                 
-                 document.getElementById("satkarya2").id="satkarya";
-            }
-        }
+      
      </script>      
          <style>
+          
           a{
             color:white;
+          }
+          #slogo{
+            z-index:4;
           }
           </style>         
   </head>
   <body>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="head">
-          <img src="img/logo.png" class="img-fluid mx-1" id="slogo" style="width:100px;">
-          <a class="navbar-brand mx-1" href="index.php"> <p id="satkarya" class=""> सत्कार्य </p></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon mt-0"></span>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top p-0 my-0" id="head">
+          <img src="img/logo.png" class="img-fluid mx-1 p-0 my-0 " id="slogo" >
+          <a class="navbar-brand mx-1 p-0 my-0" href="index.php"> <p id="satkarya" class="p-0 my-0"> सत्कार्य </p></a>
+          <button class="navbar-toggler p-0 my-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon mt-0 p-0 my-0"></span>
           </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ml-auto mt-0">
+          <div class="collapse navbar-collapse p-0 my-0" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto mt-0 p-0 my-0">
                   <li class="nav-item mx-2 active"><a href="index.php" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
                   <li class="nav-item mx-2 active"><a href="About.php" class="nav-link"><i class="fas fa-th"></i> About Us</a></li>
                   <li class="nav-item mx-2 active"><a href="Gallery.php" class="nav-link"><i class="fas fa-galery"></i>Gallery</a></li>
-                  <li class="nav-item mx-2 active"><a href="donation.php" class="nav-link"><i class="fas fa-th"></i>Donate with fun<i class="far fa-smile"></i> </a></li>
+                  <li class="nav-item mx-2 active"><a href="donation.php" class="nav-link"><i class="fas fa-th"></i>Events</a></li>
                   <?php
                      
                      if (isset($_SESSION['email'])) {

@@ -14,7 +14,31 @@
   <body>
      <?php include 'header2.php';?> 
     <div style="height:68px;"></div>
+     <section>
+     <?php
+      $quer="SELECT id,image,info,date FROM posts";
+      $querrunner = mysqli_query($connection, $quer);
+      
+      
+       while($num=mysqli_fetch_array($querrunner))
+       {
+        
+        
+      ?>
+    <section>
+      <div class="card container">
+        <img class="card-img-top overflow-hidden" src="<?php echo $num[1]; ?>" alt="Card image" height="600">
+        <div class="card-body">
+          <p class="card-text"><?php echo $num[2];?></p>
+        </div>
+      </div>
+      </section>
+      <hr>
+       <?php
+        }
+       ?>
 
+     </section>
      <?php include 'footer.php';?> 
       
     </body>

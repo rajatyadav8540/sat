@@ -13,18 +13,18 @@
   </head>
   <body>
   <?php require 'common.php'; ?>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="">
-          <img src="img/logo.png" class="img-fluid mx-1" style="width:50px;">
-          <a class="navbar-brand" href="index.php"> <p id="satkarya2">सत्कार्य</p></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top p-0 my-0 bg-black" id="head2">
+          <img src="img/logo.png" class="img-fluid mx-1 p-0 my-0" style="width:70px;">
+          <a class="navbar-brand p-0 my-0 mx-1" href="index.php"> <p id="satkarya2" class="p-0 my-0">सत्कार्य</p></a>
+          <button class="navbar-toggler p-0 my-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon  p-0 my-0"></span>
           </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ml-auto">
-                  <li class="mx-2 nav-item "><a href="index.php" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
-                  <li class="mx-2 nav-item "><a href="About.php"class="nav-link"><i class="fas fa-th"></i> About Us</a></li>
-                  <li class="mx-2 nav-item "><a href="Gallery.php" class="nav-link"><i class="fas fa-galery"></i>Gallery</a></li>
-                  <li class="mx-2 nav-item "><a href="donation.php" class="nav-link"><i class="fas fa-th"></i> Donate with fun<i class="far fa-smile"></i></a></li>
+          <div class="collapse navbar-collapse p-0 my-0" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto p-0 my-auto">
+                  <li class="mx-2 nav-item active "><a href="index.php" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                  <li class="mx-2 nav-item active"><a href="About.php"class="nav-link"><i class="fas fa-th"></i> About Us</a></li>
+                  <li class="mx-2 nav-item active"><a href="Gallery.php" class="nav-link"><i class="fas fa-galery"></i>Gallery</a></li>
+                  <li class="mx-2 nav-item active"><a href="donation.php" class="nav-link"><i class="fas fa-th"></i> Events</i></a></li>
                   <?php
                      
                      if (isset($_SESSION['email'])) {
@@ -36,7 +36,7 @@
                         ?>
                          <li class="nav-item mx-2 active"><a href="memberpage.php" class="nav-link"><img src="<?php echo $nqrfe['image']; ?>" alt="" class="rounded-circle img-fluid text-center" width="50"></a></li>
                      <?php }else{ ?>
-                  <li class="nav-item mx-2 "><a href="login.php" class="nav-link"><i class="fas fa-login"></i> Login</a></li>  
+                  <li class="nav-item mx-2 active "><a href="login.php" class="nav-link"><i class="fas fa-login"></i> Login</a></li>  
                      <?php } ?>    
               </ul>
           </div>  
